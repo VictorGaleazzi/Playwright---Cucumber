@@ -1,7 +1,9 @@
 {
     "firstName": "Koushik ",
     "lastName": "C ",
-    "userName": "user",
-    "password": "Pass123$",
+    "userName": "Treinamento",
+    "password": "123",
+    "wrongUserName": "Treinament0",
+    "wrongPassword": "321",
     "confirmPassword": "Pass123$"
 }

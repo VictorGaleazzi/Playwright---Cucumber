@@ -10,23 +10,26 @@ setDefaultTimeout(60 * 1000 * 2)
 Given('que estou na tela de login do CissGo', async function () {
   
   await fixture.page.goto(process.env.BASEURL2);
+  // await loginGoPage.navigateToLoginPage()
 });
 
-Given('que preencho o campo usuário com valor {string}', async function (username) {
+When('preencho o campo Usuário com valor {string}', async function (username) {
 
   loginGoPage = new LoginGoPage(fixture.page);
   await loginGoPage.enterUserName(username);
+
 });
 
-Given('que preencho o campo senha com valor {string}', async function (password) {
+When('preencho o campo Senha com valor {string}', async function (password) {
 
   await loginGoPage.enterPassword(password);
 });
 
-When('clico no botão entrar', async function () {
-  
+When('clico no botão Entrar', async function () {
+
   await loginGoPage.clickLoginButton();
 });
+
 
 Then('deve logar no sistema', async function () {
 
